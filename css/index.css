@@ -77,7 +77,7 @@ li {
 /*セクション共通 */
 [class^="con__home"] {
   background-color: #C5E0F3;
-  padding: 80px 0;
+  padding: clamp(2.5rem, 1.735rem + 3.82vw, 5rem) 0;
 }
 
 .__inner {
@@ -88,7 +88,7 @@ li {
 
 /* タイトル共通 */
 .ttl {
-  margin-bottom: 80px;
+  margin-bottom: clamp(2.5rem, 1.735rem + 3.82vw, 5rem);
 }
 
 
@@ -184,7 +184,6 @@ li {
 /* ハンバーガー */
 .h-open {
   position: absolute;
-
   right: 0;
   cursor: pointer;
   width: 100px;
@@ -262,18 +261,23 @@ li {
 
 #h-nav li {
   position: relative;
-  border-bottom: solid 1.5px #C5E0F3;
   margin: 22.5% 0;
 }
 
-#h-nav li::after {
+#h-nav li::before {
   position: absolute;
   content: "";
-  left: -15px;
-  bottom: 0;
-  height: 100%;
-  width: 3.75px;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
   background-color: #C5E0F3;
+  left: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#h-nav li:hover::before {
+  background-color: #D3D300;
 }
 
 #h-nav li a {
@@ -455,17 +459,17 @@ li {
 }
 
 .catch-wrap__ttl h3{
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.174rem + 0.38vw, 1.5rem);
 }
 
 .catch-wrap__ttl span {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.347rem + 0.76vw, 2rem);
   margin-right: 1rem;
   background: linear-gradient(transparent 50%, #D3D300 50%);
 }
 
 .catch-wrap__ttl b {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 1.347rem + 0.76vw, 2rem);
 }
 
 .catch-wrap__con {
@@ -601,12 +605,12 @@ li {
 .apeal02-wrap__point__ttl h4 {
   font-family: "Shippori Mincho", serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.347rem + 0.76vw, 2rem);
 
 }
 
 .apeal02-wrap__point__ttl  span {
-  font-size: 3rem;
+  font-size: clamp(2.25rem, 2.021rem + 1.15vw, 3rem);
   z-index: 1;
   position: relative;
   margin-right: 1rem;
@@ -616,8 +620,8 @@ li {
 .apeal02-wrap__point__ttl span::before {
   content: '';
   background-image: url(../img/Vector.png);
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -688,11 +692,11 @@ li {
 }
 
 .apeal03-wrap__ttl p {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.174rem + 0.38vw, 1.5rem);
 }
 
 .apeal03-wrap__ttl h3 {
-  font-size: 2.5rem;
+  font-size: clamp(2.25rem, 2.174rem + 0.38vw, 2.5rem);
   border-top: #fff solid 2px;
 }
 
@@ -752,7 +756,7 @@ li {
 .plan-wrap__ttl span {
   font-size: clamp(1.75rem, 1.521rem + 1.15vw, 2.5rem);
   margin: 1rem;
-  background: linear-gradient(transparent 60%,#fff 60%)
+  background: linear-gradient(transparent 60%, #fff 60%);
 }
 
 .plan-wrap__con {
@@ -770,7 +774,7 @@ li {
 }
 
 .plan-wrap__con__box__ttl {
-  font-size: clamp(1.5rem, 1.194rem + 1.53vw, 2.5rem);
+  font-size: clamp(1.1rem, 0.672rem + 2.14vw, 2.5rem);
   text-align: center
 }
 
@@ -778,6 +782,7 @@ li {
   border-bottom: #244972 solid 2px;
   font-weight: 400;
 }
+
 
 .plan-wrap__con__box__about {
   display: flex;
@@ -792,10 +797,8 @@ li {
   justify-content: center;
 }
 
-
 .plan-wrap__con__box__about img {
   width: 90%;
-
 }
 
 .plan-wrap__con__box__about__ser {
@@ -855,7 +858,7 @@ li {
   font-weight: 400;
   display: inline-block;
   position: relative;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.347rem + 0.76vw, 2rem);
 }
 
 .ttl-sub::before {
@@ -908,6 +911,10 @@ li {
   font-size: 1.25rem;
 }
 
+.faq-wrap__con__list__item__ttl span {
+  padding-left: clamp(1.65rem, 1.543rem + 0.54vw, 2rem);
+}
+
 .faq-wrap__con__list__item__item__ttl i {
   padding-right: 1rem;
 }
@@ -916,7 +923,7 @@ li {
   /* トグルマークの線 ２本 */
   content: "";
   position: absolute;
-  right: 1.75%;
+  right: 4%;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   width: 1.5px;
@@ -932,7 +939,7 @@ li {
 
 .faq-wrap__con__list__item__txt p {
   /* answerのテキスト */
-  font-weight: 400;
+  font-weight: 200;
   border-top: solid 1px #244972;
   margin-top: 1%;
   padding-top: 1%;
@@ -969,8 +976,12 @@ li {
   text-align: center;
 }
 
+.contact-wrap__ttl h3 {
+  font-size: clamp(1.25rem, 1.021rem + 1.15vw, 2rem);
+}
+
 .contact-wrap__ttl p {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.924rem + 0.38vw, 1.25rem);
 }
 
 .contact-wrap__con {
@@ -991,7 +1002,7 @@ li {
 }
 
 .contact-wrap__con__form__item__ttl p {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.174rem + 0.38vw, 1.5rem);
   padding: 0 1rem;
   line-height: 0;
 }
@@ -999,20 +1010,16 @@ li {
 .contact-wrap__con__form__item__ttl span {
   background-color: #244972;
   color: #fff;
-  font-size: 14px;
-  padding: 0 0.5rem;
-
-
-}
-
-.contact-wrap__con__form__item__input {
-
+  font-size: clamp(0.75rem, 0.712rem + 0.19vw, 0.875rem);
+  padding: 0 1%;
+  line-height: 1.5;
 }
 
 .contact-wrap__con__form__item__input__one.__text input {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.924rem + 0.38vw, 1.25rem);
   padding:0.5rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-wrap__con__form__item__input__one.__date input {
@@ -1034,21 +1041,28 @@ li {
 } 
 
 .contact-wrap__con__form__btn {
-  background-color: #D3D300;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  max-width: 70%;
-  width: 260px;
+  max-width: 260px;
+  width: 70%;
   margin: auto;
   margin-top: 70px;
 }
 
-.contact-wrap__con__form__btn p {
-  display: inline-block;
+.contact-wrap__con__form__btn button {
+  width: 100%;
+  background-color: #D3D300;
+  cursor: pointer;
+  border: unset;
+  line-height: 3;
+  transition: all 0.3s;
+  font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
 }
 
-
+.contact-wrap__con__form__btn button:hover {
+  border: #D3D300 solid 3px;
+  background-color: #fff;
+  color: #D3D300;
+  box-sizing: border-box;
+}
 
 
 
@@ -1083,9 +1097,6 @@ li {
   border-bottom: #fff double 5px;
 }
 
-.footer-wrap__body__profile__top br {
-  display: none;
-}
 
 .footer-wrap__body__profile__table {
   width: 100%;
@@ -1216,8 +1227,6 @@ li {
     font-size: 1rem;
   }
 
-
-
   .apeal02-wrap__point__con {
     display: block;
     margin-bottom: 60px;
@@ -1248,8 +1257,6 @@ li {
     font-size: 1.25rem;
   }
 
-
-
     .apeal03-wrap__con {
     margin-bottom: 60%;
   }
@@ -1273,88 +1280,85 @@ li {
     width: 75%;
   }
 
+  .plan-wrap__con__box {
+    border-bottom: none;
+  }
+
+  .plan-wrap__con__box__about {
+    display: block;
+    padding: 3% 0;
+  }
+
+  .plan-wrap__con__box__about__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5% 0;
+  }
 
 
+  .plan-wrap__con__box__about img {
+    width: 80%;
+  }
 
+  .plan-wrap__con__box__about__ser {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
+  .plan-wrap__con__box__about__ser__cost {
+    width:70%;
+    max-width: 350px;
+    margin: 0 0 3% auto;
 
+  }
 
+  .plan-wrap__con__box__about__ser p {
+    background-color: #fff;
+    font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
+    line-height: 2.2;
+  }
 
+  .plan-wrap__con__box__about__ser h1 {
+    font-size: clamp(5rem, -1.012rem + 9.38vw, 7rem);
+    line-height: 1;
+    font-family: "Shippori Mincho", serif;
+    margin-bottom: clamp(0.438rem, -0.126rem + 0.88vw, 0.625rem);
+  }
 
-.plan-wrap__con__box__about {
-  display: block;
-  padding: 3% 0;
-}
+  .plan-wrap__con__box__about__ser span {
+    font-size: 2.5rem;
+    font-family: "Shippori Mincho", serif;
+    margin-left: 1rem;
+  }
 
-.plan-wrap__con__box__about__img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 5% 0;
-}
+  .plan-wrap__con__box__about__ser h6 {
+    background-color: #244972;
+    color: #fff;
+    font-weight: 200;
+    font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
+    line-height: 2;
+    margin-bottom: 3%;
+  }
 
+  .plan-wrap__con__box__about__ser__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: clamp(0.438rem, -0.126rem + 0.88vw, 0.625rem);
+  }
 
-.plan-wrap__con__box__about img {
-  width: 80%;
-}
-
-.plan-wrap__con__box__about__ser {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.plan-wrap__con__box__about__ser__cost {
-  width:70%;
-  margin: 0 0 5% auto;
-
-}
-
-.plan-wrap__con__box__about__ser p {
-  background-color: #fff;
-  font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
-  line-height: 2.2;
-}
-
-.plan-wrap__con__box__about__ser h1 {
-  font-size: clamp(5rem, -1.012rem + 9.38vw, 7rem);
-  line-height: 1;
-  font-family: "Shippori Mincho", serif;
-  margin-bottom: clamp(0.438rem, -0.126rem + 0.88vw, 0.625rem);
-}
-
-.plan-wrap__con__box__about__ser span {
-  font-size: 2.5rem;
-  font-family: "Shippori Mincho", serif;
-  margin-left: 1rem;
-}
-
-.plan-wrap__con__box__about__ser h6 {
-  background-color: #244972;
-  color: #fff;
-  font-weight: 200;
-  font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
-  line-height: 2;
-  margin-bottom: 2%;
-}
-
-.plan-wrap__con__box__about__ser__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: clamp(0.438rem, -0.126rem + 0.88vw, 0.625rem);
-}
-
-.plan-wrap__con__box__about__ser__item p {
-  background-color: #D3D300;
-  width: 32%;
-  font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
-}
-  
+  .plan-wrap__con__box__about__ser__item p {
+    background-color: #D3D300;
+    width: 32%;
+    font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
+  }
+    
 
 
 
@@ -1386,6 +1390,7 @@ li {
     width: 81%;
     margin: auto;
   }
+
 
 
   .header {
@@ -1624,6 +1629,11 @@ li {
   margin-bottom: 60px;
 }
 
+.apeal02-wrap__point__ttl span::before {
+  width: 4rem;
+  height: 4rem;
+}
+
 .apeal02-wrap__point__con {
   display: block;
   margin-bottom: 60px;
@@ -1674,9 +1684,72 @@ li {
     width: 80%;
   }
 
+  
+/* 脱毛プラン */
+.plan-wrap__ttl br {
+  display: block;
+}
+
+.plan-wrap__ttl span {
+  margin: 0;
+  background: linear-gradient(transparent 60%, #fff 60%);
+}
+
+.plan-wrap__con {
+  padding: 8% 0;
+}
+
+.plan-wrap__con__box {
+  width: 87%;
+}
+
+.plan-wrap__con__box__about {
+  display: block;
+  padding: 3% 0;
+}
+
+
+.plan-wrap__con__box__about img {
+  width: 90%;
+}
+
+.plan-wrap__con__box__about__ser__cost {
+  width: 100%;
+  margin: 0 0 2% 0;
+}
+
+.plan-wrap__con__box__about__ser p {
+  font-size: clamp(0.75rem, 0.393rem + 1.79vw, 1.25rem);
+  line-height: 2;
+}
+
+.plan-wrap__con__box__about__ser h1 {
+  font-size: clamp(3.5rem, 1rem + 12.5vw, 7rem);
+  line-height: 1;
+}
+
+.plan-wrap__con__box__about__ser span {
+  font-size: clamp(1.5rem, 0.786rem + 3.57vw, 2.5rem);
+}
+
+.plan-wrap__con__box__about__ser__item p {
+  font-size: clamp(0.75rem, 0.393rem + 1.79vw, 1.25rem);
+}
+
+
+/* よくある質問 */
+.faq-wrap__con__list__item__ttl {
+  font-size: 1rem;
+}
+
+
+
+.faq-wrap__con__list__item__txt p {
+  font-size: 1rem;
+}
+
+
   /* フッター */
-
-
   .footer-wrap {
     padding-top: 80px;
   }
@@ -1751,10 +1824,35 @@ li {
   left: 6%;
 }
 
+.apeal02-wrap__point__con__btn {
+  width: 80%;
+  font-size: 1rem;
+}
+
 .con__home-triangle {
   padding-top: 10px;
 }
 
+.apeal02-wrap__ttl p {
+  margin-bottom: 3%;
+}
+
+.apeal02-wrap__ttl br {
+  display: block;
+}
+
+.apeal02-wrap__point__ttl span::before {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.apeal02-wrap__point__con__item br {
+  display: block;
+}
+
+.apeal02-wrap__point__con__item {
+
+}
 
   /* アピール03-選ばれる理由 */
 .apeal03-wrap__con {
@@ -1769,6 +1867,35 @@ li {
   width: 85%;
 }
 
+.ttl-sub::before {
+  left: -2.5rem;
+  width: 30px;
+  height: 30px;
+}
+
+.ttl-sub::after {
+  right: -2.5rem;
+  width: 30px;
+  height: 30px;
+}
+
+.contact-wrap__con__form__item__input__one.__time {
+  font-size: 1rem;
+}
+
+.contact-wrap__con__form__item__input__one.__time input {
+  display: ;
+}
+
+.contact-wrap__con__form__item__input__one.__date input {
+  font-size: 1rem;
+}
+
+.__time-radio {
+  display: block;
+}
+
+
 /* フッター */
 .footer-wrap {
   padding-top: 50px;
@@ -1776,6 +1903,10 @@ li {
 
 .footer-wrap__body__profile {
   margin-bottom: 20%;
+}
+
+.footer-wrap__body__profile__top br {
+  display: block;
 }
 
 .copyright {
