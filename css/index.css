@@ -1618,44 +1618,44 @@ li {
   }
 
 
-/* アピール02-カウンセリング特徴 */
+  /* アピール02-カウンセリング特徴 */
 
 
-.apeal02-wrap__ttl br {
-  display: none;
-}
+  .apeal02-wrap__ttl br {
+    display: none;
+  }
 
-.apeal02-wrap__point__ttl {
-  margin-bottom: 60px;
-}
+  .apeal02-wrap__point__ttl {
+    margin-bottom: 60px;
+  }
 
-.apeal02-wrap__point__ttl span::before {
-  width: 4rem;
-  height: 4rem;
-}
+  .apeal02-wrap__point__ttl span::before {
+    width: 4rem;
+    height: 4rem;
+  }
 
-.apeal02-wrap__point__con {
-  display: block;
-  margin-bottom: 60px;
-}
+  .apeal02-wrap__point__con {
+    display: block;
+    margin-bottom: 60px;
+  }
 
-.apeal02-wrap__point__con__item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-}
+  .apeal02-wrap__point__con__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
 
-.apeal02-wrap__point__con__item h2 {
-  font-size: 3rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-}
+  .apeal02-wrap__point__con__item h2 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
 
-.apeal02-wrap__point__con__item p {
-  color: #244972;
-  font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
-}
+  .apeal02-wrap__point__con__item p {
+    color: #244972;
+    font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
+  }
 
 
   /* アピール03-選ばれる理由 */
@@ -1685,68 +1685,67 @@ li {
   }
 
   
-/* 脱毛プラン */
-.plan-wrap__ttl br {
-  display: block;
-}
+  /* 脱毛プラン */
+  .plan-wrap__ttl br {
+    display: block;
+  }
 
-.plan-wrap__ttl span {
-  margin: 0;
-  background: linear-gradient(transparent 60%, #fff 60%);
-}
+  .plan-wrap__ttl span {
+    margin: 0;
+    background: linear-gradient(transparent 60%, #fff 60%);
+  }
 
-.plan-wrap__con {
-  padding: 8% 0;
-}
+  .plan-wrap__con {
+    padding: 8% 0;
+  }
 
-.plan-wrap__con__box {
-  width: 87%;
-}
+  .plan-wrap__con__box {
+    width: 87%;
+  }
 
-.plan-wrap__con__box__about {
-  display: block;
-  padding: 3% 0;
-}
-
-
-.plan-wrap__con__box__about img {
-  width: 90%;
-}
-
-.plan-wrap__con__box__about__ser__cost {
-  width: 100%;
-  margin: 0 0 2% 0;
-}
-
-.plan-wrap__con__box__about__ser p {
-  font-size: clamp(0.75rem, 0.393rem + 1.79vw, 1.25rem);
-  line-height: 2;
-}
-
-.plan-wrap__con__box__about__ser h1 {
-  font-size: clamp(3.5rem, 1rem + 12.5vw, 7rem);
-  line-height: 1;
-}
-
-.plan-wrap__con__box__about__ser span {
-  font-size: clamp(1.5rem, 0.786rem + 3.57vw, 2.5rem);
-}
-
-.plan-wrap__con__box__about__ser__item p {
-  font-size: clamp(0.75rem, 0.393rem + 1.79vw, 1.25rem);
-}
+  .plan-wrap__con__box__about {
+    display: block;
+    padding: 3% 0;
+  }
 
 
-/* よくある質問 */
-.faq-wrap__con__list__item__ttl {
-  font-size: 1rem;
-}
+  .plan-wrap__con__box__about img {
+    width: 90%;
+  }
+
+  .plan-wrap__con__box__about__ser__cost {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 2% 0;
+  }
+
+  .plan-wrap__con__box__about__ser p {
+    font-size: clamp(0.75rem, 0.393rem + 1.79vw, 1.25rem);
+    line-height: 2;
+  }
+
+  .plan-wrap__con__box__about__ser h1 {
+    font-size: clamp(3.5rem, 1rem + 12.5vw, 7rem);
+    line-height: 1;
+  }
+
+  .plan-wrap__con__box__about__ser span {
+    font-size: clamp(1.5rem, 0.786rem + 3.57vw, 2.5rem);
+  }
+
+  .plan-wrap__con__box__about__ser__item p {
+    font-size: clamp(0.75rem, 0.393rem + 1.79vw, 1.25rem);
+  }
 
 
+  /* よくある質問 */
+  .faq-wrap__con__list__item__ttl {
+    font-size: 1rem;
+  }
 
-.faq-wrap__con__list__item__txt p {
-  font-size: 1rem;
-}
+  .faq-wrap__con__list__item__txt p {
+    font-size: 1rem;
+  }
 
 
   /* フッター */
@@ -1818,99 +1817,95 @@ li {
 
 
 
-.apeal01-wrap__img p {
-  position: absolute;
-  top: 3%;
-  left: 6%;
-}
+  .apeal01-wrap__img p {
+    position: absolute;
+    top: 3%;
+    left: 6%;
+  }
 
-.apeal02-wrap__point__con__btn {
-  width: 80%;
-  font-size: 1rem;
-}
+  .apeal02-wrap__point__con__btn {
+    width: 80%;
+    font-size: 1rem;
+  }
 
-.con__home-triangle {
-  padding-top: 10px;
-}
+  .con__home-triangle {
+    padding-top: 10px;
+  }
 
-.apeal02-wrap__ttl p {
-  margin-bottom: 3%;
-}
+  .apeal02-wrap__ttl p {
+    margin-bottom: 3%;
+  }
 
-.apeal02-wrap__ttl br {
-  display: block;
-}
+  .apeal02-wrap__ttl br {
+    display: block;
+  }
 
-.apeal02-wrap__point__ttl span::before {
-  width: 3.5rem;
-  height: 3.5rem;
-}
+  .apeal02-wrap__point__ttl span::before {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 
-.apeal02-wrap__point__con__item br {
-  display: block;
-}
+  .apeal02-wrap__point__con__item br {
+    display: block;
+  }
 
-.apeal02-wrap__point__con__item {
+  .apeal02-wrap__point__con__item {
 
-}
+  }
 
-  /* アピール03-選ばれる理由 */
-.apeal03-wrap__con {
-  margin-bottom: 55px;
-}
+    /* アピール03-選ばれる理由 */
+  .apeal03-wrap__con {
+    margin-bottom: 55px;
+  }
 
-.apeal03-wrap__con__box {
-  height: 21rem;
-}
+  .apeal03-wrap__con__box {
+    height: 21rem;
+  }
 
-.apeal03-wrap__con__box__txt {
-  width: 85%;
-}
+  .apeal03-wrap__con__box__txt {
+    width: 85%;
+  }
 
-.ttl-sub::before {
-  left: -2.5rem;
-  width: 30px;
-  height: 30px;
-}
+  .ttl-sub::before {
+    left: -2.5rem;
+    width: 30px;
+    height: 30px;
+  }
 
-.ttl-sub::after {
-  right: -2.5rem;
-  width: 30px;
-  height: 30px;
-}
+  .ttl-sub::after {
+    right: -2.5rem;
+    width: 30px;
+    height: 30px;
+  }
 
-.contact-wrap__con__form__item__input__one.__time {
-  font-size: 1rem;
-}
+  .contact-wrap__con__form__item__input__one.__time {
+    font-size: 1rem;
+  }
 
-.contact-wrap__con__form__item__input__one.__time input {
-  display: ;
-}
+  .contact-wrap__con__form__item__input__one.__time input {
+    display: ;
+  }
 
-.contact-wrap__con__form__item__input__one.__date input {
-  font-size: 1rem;
-}
+  .contact-wrap__con__form__item__input__one.__date input {
+    font-size: 1rem;
+  }
 
-.__time-radio {
-  display: block;
-}
+  .__time-radio {
+    display: block;
+  }
 
 
-/* フッター */
-.footer-wrap {
-  padding-top: 50px;
-}
+  /* フッター */
+  .footer-wrap {
+    padding-top: 50px;
+  }
 
-.footer-wrap__body__profile {
-  margin-bottom: 20%;
-}
+  .footer-wrap__body__profile {
+    margin-bottom: 20%;
+  }
 
-.footer-wrap__body__profile__top br {
-  display: block;
-}
-
-.copyright {
-  margin-top: 50px;
-}
+  .copyright {
+    margin-top: 50px;
+  }
 
 }
