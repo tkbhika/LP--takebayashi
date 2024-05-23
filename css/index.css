@@ -21,7 +21,7 @@
 html {
   font-size: 100%;
   /* ヘッダーの高さ */
-  scroll-padding-top: 100px;
+  scroll-padding-top: 80px;
   scroll-behavior: smooth;
 }
 
@@ -104,7 +104,7 @@ li {
 /* ヘッダー */
 .header {
   background-color: #C5E0F3;
-  height: 100px;
+  height: 90px;
   width: 100%;
   box-shadow: 1.95px 1.95px 2.6px rgba(36, 73, 114, 0.3);
   position: sticky;
@@ -125,7 +125,7 @@ li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  height: 90px;
 }
 
 .header-wrap__ttl__logo {
@@ -141,6 +141,7 @@ li {
 .header-wrap__ttl__txt {
   font-family: "Shippori Mincho", serif;
   font-size: clamp(0.75rem, -0.001rem + 1.17vw, 1rem);
+  line-height: 1.5;
 }
 
 .header-wrap__nav {
@@ -157,13 +158,13 @@ li {
   display: flex;
   align-items: center;
   background-color: #D3D300;
-  height: 60px;
+  height: 50px;
   padding: 0 clamp(1rem, -0.503rem + 2.35vw, 1.5rem);
 }
 
 .header-wrap__nav__list__btn__tel {
   background-color: #244972;
-  height: 60px;
+  height: 50px;
   margin-right: 1rem;
 }
 
@@ -294,17 +295,13 @@ li {
 
 /* トップ */
 .top {
-  background-image: url(../img/top-wide.jpg);
+  background-image: url(../img/top-wide02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  aspect-ratio: 5/3;
   position: relative;
-
-
+  height: 700px;
 }
-
-
 
 .top-a {
   width: 50%;
@@ -320,13 +317,13 @@ li {
   font-family: "Shippori Mincho", serif;
   text-align: center;
   width: 70%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
   height: 100%;
   white-space: nowrap;
-
+  margin-left: 10%;
 }
 
 .top-con__plan__sub {
@@ -665,9 +662,8 @@ li {
   background-color: #D3D300;
   display: flex;
   align-items: center;
-  width: 70%;
-  max-width: 280px;
-  line-height: 4;
+  width: 100%;
+  line-height: 3.5;
   margin: auto;
   justify-content: center;
   font-size: 1.25rem;
@@ -909,6 +905,7 @@ li {
   /* questionのテキスト */
   display: block;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .faq-wrap__con__list__item__ttl span {
@@ -1016,7 +1013,7 @@ li {
 }
 
 .contact-wrap__con__form__item__input__one.__text input {
-  font-size: clamp(1rem, 0.924rem + 0.38vw, 1.25rem);
+  font-size: 1rem;
   padding:0.5rem;
   width: 100%;
   box-sizing: border-box;
@@ -1173,6 +1170,9 @@ li {
     font-size: 1.25rem;
   }
 
+  .top {
+    height: 450px;
+  }
 
   .top-con__plan {
     width: clamp(18.75rem, 9.326rem + 19.61vw, 21.875rem);
@@ -1485,7 +1485,7 @@ li {
   .top-con__plan {
     width: 70%;
     max-width: 450px;
-
+    margin: auto;
   }
 
   .top-con__plan__sub {
