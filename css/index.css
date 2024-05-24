@@ -158,13 +158,13 @@ li {
   display: flex;
   align-items: center;
   background-color: #D3D300;
-  height: 50px;
+  height: 60px;
   padding: 0 clamp(1rem, -0.503rem + 2.35vw, 1.5rem);
 }
 
 .header-wrap__nav__list__btn__tel {
   background-color: #244972;
-  height: 50px;
+
   margin-right: 1rem;
 }
 
@@ -662,7 +662,8 @@ li {
   background-color: #D3D300;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  max-width: 310px;
   line-height: 3.5;
   margin: auto;
   justify-content: center;
@@ -1017,12 +1018,14 @@ li {
   padding:0.5rem;
   width: 100%;
   box-sizing: border-box;
+  line-height: 2;
 }
 
 .contact-wrap__con__form__item__input__one.__date input {
   padding: 0.5rem;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  line-height: 2;
 }
 
 .__time-radio {
@@ -1055,10 +1058,10 @@ li {
 }
 
 .contact-wrap__con__form__btn button:hover {
-  border: #D3D300 solid 3px;
   background-color: #fff;
   color: #D3D300;
-  box-sizing: border-box;
+  outline: 3px solid #D3D300;
+  outline-offset: -3px;
 }
 
 
@@ -1071,77 +1074,77 @@ li {
 }
 
 .footer-wrap {
-  padding-top: 100px;
+  padding-top: 80px;
 }
-
-.footer-wrap__body {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 .footer-wrap__body__profile {
-  width: 360px; 
-
+  width: 100%; 
+  margin-bottom: 10%;
 }
 
 .footer-wrap__body__profile__top {
-  margin-bottom: 15%;
-}
-
-.footer-wrap__body__profile__top img {
+  margin-bottom: 2%;
   width: 100%;
   border-bottom: #fff double 5px;
 }
 
-
-.footer-wrap__body__profile__table {
+.footer-wrap__body__profile__top img {
   width: 100%;
-  text-align: center;
-  border: #fff 1px solid;
+  max-width: 430px;
+  display: inline-block;
 }
 
-.footer-wrap__body__profile__table th {
+.footer-wrap__body__profile__btm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap__body__profile__btm__ap {
+  font-size: clamp(1rem, 0.924rem + 0.38vw, 1.25rem);
+
+}
+
+.footer-wrap__body__profile__btm__table {
+  width: 50%;
+  text-align: center;
+  border: #fff 1px solid;
+  margin-top: 0.75rem;
+}
+
+.footer-wrap__body__profile__btm__table th {
   background-color: #fff;
   color: #244972;
 }
 
-.footer-wrap__body__profile__table tr {
+.footer-wrap__body__profile__btm__table tr {
   line-height: 2.5 ;
 }
 
-.footer-wrap__body__profile__table td{
+.footer-wrap__body__profile__btm__table td{
   border: #fff 1px solid ;
 }
 
-
-
-
-
 .footer-wrap__body__menu {
   text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-wrap__body__menu__list {
-  margin-bottom: 2rem;
+  font-size: clamp(0.75rem, 0.108rem + 1.34vw, 1.25rem);
 }
 
 .footer-wrap__body__menu__list a {
   color: #fff;
+  cursor: pointer;
 }
 
 .copyright {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   line-height: 6rem;
   font-size: 14px;
 }
-
-
-
-
-
-
 
 
 
@@ -1359,20 +1362,17 @@ li {
     font-size: clamp(1rem, 0.249rem + 1.17vw, 1.25rem);
   }
     
-
-
-
-
-
-
-  .footer-wrap__body__profile {
-    width: 280px;
-
+  .footer-wrap__body__profile__top {
+    text-align: center;
   }
 
+  .footer-wrap__body__profile__btm__table {
+    width: 45%;
+  }
 
-
-
+  .footer-wrap__body__menu__list {
+    font-size: 0.75rem;
+  }
 
 }
 
@@ -1457,7 +1457,7 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    aspect-ratio: 5/4;
+    height: clamp(17.5rem, 5.446rem + 60.27vw, 34.375rem);
   }
 
   .dot {
@@ -1750,26 +1750,45 @@ li {
 
   /* フッター */
   .footer-wrap {
-    padding-top: 80px;
-  }
-
-  .footer-wrap__body {
-    display: block;
+    padding-top: 10%;
   }
 
   .footer-wrap__body__profile {
-    width: 100%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   }
 
-  .footer-wrap__body__profile__top {
-    margin-bottom: 8%;
+  .footer-wrap__body__profile__top img {
+    width: 95%;
+  }
+
+  .footer-wrap__body__profile__btm {
+    display: block;
+  }
+
+  .footer-wrap__body__profile__btm__ap {
+    margin-top: 5%;
+  }
+
+  .footer-wrap__body__profile__btm__table {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .footer-wrap__body__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-wrap__body__menu__list {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
   }
 
   .copyright {
-    margin-top: 80px;
+    margin-top: 0;
   }
-
 }
 
 
@@ -1894,18 +1913,5 @@ li {
     display: block;
   }
 
-
-  /* フッター */
-  .footer-wrap {
-    padding-top: 50px;
-  }
-
-  .footer-wrap__body__profile {
-    margin-bottom: 20%;
-  }
-
-  .copyright {
-    margin-top: 50px;
-  }
 
 }
